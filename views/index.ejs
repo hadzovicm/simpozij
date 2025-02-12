@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<%- include("navbar.ejs") %>
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #ff7f50, #d3d3d3); /* Bright orange to subtle gray */
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .container.marketing {
+            padding-top: 2rem; /* Add padding to separate from hero section */
+            padding-bottom: 2rem; /* Add padding at the bottom */
+        }
+
+        .featurette {
+            display: flex;
+            align-items: center; /* Center content vertically */
+            justify-content: center; /* Center content horizontally */
+            margin-bottom: 2rem; /* Add space between featurettes */
+            text-align: center; /* Center text */
+        }
+
+        .featurette img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .countdown {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .countdown span {
+            display: inline-block;
+            min-width: 50px;
+        }
+    </style>
+
+    <body>
+        <main role="main">
+            <div class="hero-section">
+                <div>
+                    <h1>Welcome to Dermatology Symposium 2024</h1>
+                    <p>Join us for the most comprehensive dermatology conference of the year.</p>
+                    <p><a class="btn btn-lg btn-primary" href="/contact">Register Now</a></p>
+                    <div class="countdown" id="countdown">
+                        <h3 id="demo"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container marketing">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 text-center mb-4">
+                        <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                        <h2>Heading</h2>
+                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center mb-4">
+                        <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                        <h2>Heading</h2>
+                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center mb-4">
+                        <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                        <h2>Heading</h2>
+                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette justify-content-center">
+                    <div class="col-md-7 text-center">
+                        <h2 class="featurette-heading">First section</h2>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <img src="/public/images/landscape-placeholder.svg" class="featurette-image img-fluid mx-auto" alt="Feature image">
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette justify-content-center">
+                    <div class="col-md-7 order-md-2 text-center">
+                        <h2 class="featurette-heading">Second section</h2>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1 text-center">
+                        <img src="/public/images/landscape-placeholder.svg" class="featurette-image img-fluid mx-auto" alt="Feature image">
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette justify-content-center">
+                    <div class="col-md-7 text-center">
+                        <h2 class="featurette-heading">Last section</h2>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <img src="/public/images/landscape-placeholder.svg" class="featurette-image img-fluid mx-auto" alt="Feature image">
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+            </div>
+
+            <!-- FOOTER -->
+            <%- include("footer.ejs") %>
+        </main>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Apr 15, 2025 00:00:00").getTime();
+            
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+            
+              // Get today's date and time
+              var now = new Date().getTime();
+            
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+            
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+              // Display the result in the element with id="demo"
+              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+            
+              // If the count down is finished, write some text
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script>
+        
+    </body>
+</html>
+
