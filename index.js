@@ -21,8 +21,9 @@ app.get('/contact', (req, res) => {
     res.render('contact', {currentPage: 'contact'});
 });
 
-app.get('/newsletter', (req, res) => {
+app.get('/newsletter' , (req, res) => {
     res.render('newsletter', {currentPage: 'newsletter'});
+    
 });
 
 const PORT = process.env.PORT || 3000;
