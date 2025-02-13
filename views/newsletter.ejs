@@ -1,52 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>Newsletter - Dermatology Symposium</title>
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/public/styles/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <style>
-            body {
-                background: linear-gradient(135deg, #ff7f50, #d3d3d3);
-                background-attachment: fixed;
-                background-size: cover;
-                background-position: center;
-            }
-        </style>
-        <%- include("navbar.ejs") %>
+<body>
+    <%- include("navbar.ejs") %>
 
-        <!-- Newsletter Section -->
-        <div class="container-fluid pt-5">
-            <section class="resume-section">
-                <div class="resume-section-content">
-
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="mb-4">
-                                <h3>Stay Updated</h3>
-                                <p>Subscribe to our newsletter for the latest updates about the symposium.</p>
-                            </div>
-                            <div class="mb-4">
-                                <form>
-                                    <div class="mb-3">
-                                        <input type="email" class="form-control" placeholder="Enter your email address">
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                                </form>
-                            </div>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff7f50, #d3d3d3);
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <div class="container-fluid">
+        <section class="resume-section">
+            <div class="resume-section-content">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="mb-4">
+                            <h3>Stay Updated</h3>
+                            <p>Subscribe to our newsletter for the latest updates about the symposium.</p>
+                        </div>
+                        <div class="mb-4">
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Enter your email address">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                            </form>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+    </div>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
-</html>
+    <%- include("footer.ejs") %>
+</body>
