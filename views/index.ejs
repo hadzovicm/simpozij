@@ -4,6 +4,43 @@
 <%- include("navbar.ejs") %>
     <style>
         .hero-section {
+    text-align: center; /* Center text */
+    padding: 3rem 1rem; /* Add padding to prevent overflow */
+}
+
+.hero-section h1 {
+    font-size: 2.5rem; /* Default size */
+    font-weight: bold;
+    max-width: 90%; /* Ensures it doesn’t go over edges */
+    margin: 0 auto; /* Centers text */
+    word-wrap: break-word; /* Prevents text overflow */
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem; /* Decrease size for tablets */
+    }
+    .hero-section p {
+        font-size: 1rem; /* Adjust paragraph size */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 1.8rem; /* Reduce size on smaller screens */
+    }
+    .hero-section p {
+        font-size: 0.95rem; /* Adjust paragraph size */
+    }
+}
+
+        .hero-section {
             background: linear-gradient(135deg, #ff7f50, #d3d3d3); /* Bright orange to subtle gray */
             background-size: cover;
             background-position: center;
@@ -50,7 +87,7 @@
             <div class="hero-section">
                 <div>
                     <img src="/public/images/logoudeve.png" alt="Dermatology Symposium Logo" style="width: 150px; height: 150px;" class="mb-3">
-                    <h1>Dermatoonkološki simpozij</h1>
+                    <h1>Dermato-onkološki simpozij</h1>
                     <p>Prvi multidisciplinarni dermatoonkološki simpozij u BiH sa školom dermatoskopije</p>
                     <p><a class="btn btn-lg btn-primary" href="/contact">Register Now</a></p>
                     <div class="countdown" id="countdown">
