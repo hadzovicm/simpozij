@@ -87,9 +87,8 @@
             <div class="hero-section">
                 <div>
                     <img src="/public/images/logoudeve.png" alt="Dermatology Symposium Logo" style="width: 150px; height: 150px;" class="mb-3">
-                    <h1>Dermato-onkološki simpozij</h1>
-                    <p>Prvi multidisciplinarni dermatoonkološki simpozij u BiH sa školom dermatoskopije</p>
-                    <p><a class="btn btn-lg btn-primary" href="/contact">Register Now</a></p>
+                    <h1>PRVI MULTIDISCIPLINARNI DERMATOONKOLOŠKI SIMPOZIJ U BIH</h1>
+                    <p class="mt-2"><a class="btn btn-lg btn-primary" href="/contact">Registrujte se</a></p>
                     <div class="countdown" id="countdown">
                         <h3 id="demo">00D 00H 00M 00Sn</h3>
                     </div>
@@ -97,7 +96,7 @@
             </div>
 
             <div class="container marketing">
-                <div class="row justify-content-center" style="width: auto;">
+                <!--<div class="row justify-content-center" style="width: auto;">
                     <div class="col-lg-4 col-md-6 text-center mb-4">
                         <img class="rounded-circle" src="/public/images/userimage.png" alt="Generic placeholder image" width="140" height="140">
                         <h2 class="pt-2">Dr. John Doe</h2>
@@ -113,23 +112,24 @@
                         <h2 class="pt-2">Dr. Michael Brown</h2>
                         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
                     </div>
-                </div>
+                </div> -->
 
                 <hr class="featurette-divider">
 
                 <div class="row featurette justify-content-center" style="width: auto;">
                     <div class="col-md-7 text-center">
-                        <h2 class="featurette-heading">First section</h2>
-                        <p class="lead">Udruženje za opštu i estetsku dermatovenerologiju u Bosni i Hercegovini UDEVE osnovano je sa ciljem unapređenja dermatovenerologije u Bosni i Hercegovini, promocije javnog  zdravlja i zagovaranja interesa dermatoveneroloških pacijenata, kao i zbog intenziviranja međunarodne saradnje sa kolegama iz regiona i šire te podrške u educiranju i usavršavanju mladih stručnjaka iz ove oblasti.</p>
+                        <h2 class="featurette-heading">O nama</h2>
+                        <p class="lead">Udruženje za opštu i estetsku dermatovenerologiju u Bosni i Hercegovini UDEVE osnovano je sa ciljem unapređenja dermatovenerologije u Bosni i Hercegovini, promocije javnog  zdravlja i zagovaranja interesa dermatoveneroloških pacijenata, kao i zbog intenziviranja međunarodne saradnje sa kolegama iz regiona i šire te podrške u educiranju i usavršavanju mladih stručnjaka iz ove oblasti.
+                            S ponosom Vam predstavljamo “Prvi multidisciplinarni dermatoonkološki simpozij u Bosni i Hercegovini“ koji će ove godine u Sarajevu okupiti značajan broj eminetnih imena iz reda dermatovenerologije, onkologije, plastične i rekonstruktivne hirurgije i patologije iz naše zemlje, ali i iz zemalja regiona. U sklopu simpozija održat će se i škola dermatoskopije kroz koju će učesnicima biti predstavljeni najsavremeniji standardi vizuelne dijagnostike mladeža.</p>
                     </div>
                     <div class="col-md-5 text-center">
-                        <img src="/public/images/landscape-placeholder.svg" class="featurette-image img-fluid mx-auto" alt="Feature image">
+                        <img src="/public/images/poster.jpg" class="featurette-image img-fluid mx-auto" alt="Feature image">
                     </div>
                 </div>
 
                 <hr class="featurette-divider">
 
-                <div class="row featurette justify-content-center" style="width: auto;">
+                <!--<div class="row featurette justify-content-center" style="width: auto;">
                     <div class="col-md-7 order-md-2 text-center">
                         <h2 class="featurette-heading">Second section</h2>
                         <p class="lead">S ponosom Vam predstavljamo “Prvi multidisciplinarni dermatoonkološki simpozij u Bosni i Hercegovini“ koji će ove godine u Sarajevu okupiti značajan broj eminetnih imena iz reda dermatovenerologije, onkologije, plastične i rekonstruktivne hirurgije i patologije iz naše zemlje, ali i iz zemalja regiona. </p>
@@ -151,42 +151,35 @@
                     </div>
                 </div>
 
-                <hr class="featurette-divider">
-            </div>
+                <hr class="featurette-divider"> -->
+            </div> 
 
-            <!-- FOOTER -->
-            <%- include("footer.ejs") %>
+
+            
         </main>
+        <%- include("footer.ejs") %>
 
-        <!-- Bootstrap core JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
         <script>
-            // Set the date we're counting down to
             var countDownDate = new Date("Apr 25, 2025 00:00:00").getTime();
             
-            // Update the count down every 1 second
             var x = setInterval(function() {
             
-              // Get today's date and time
               var now = new Date().getTime();
             
-              // Find the distance between now and the count down date
               var distance = countDownDate - now;
             
-              // Time calculations for days, hours, minutes and seconds
               var days = Math.floor(distance / (1000 * 60 * 60 * 24));
               var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
               var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
               var seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
-              // Display the result in the element with id="demo"
               document.getElementById("demo").innerHTML = days + "d " + hours + "h "
               + minutes + "m " + seconds + "s ";
             
-              // If the count down is finished, write some text
               if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
+                document.getElementById("demo").innerHTML = "";
               }
             }, 1000);
             </script>
