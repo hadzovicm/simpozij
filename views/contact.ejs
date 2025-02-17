@@ -42,30 +42,39 @@
     </head>
     <%- include("navbar.ejs") %>
     <body class="bg-light">
-        <div class="container py-3" style="margin-top: 6%">
+        <div class="container py-3 mt-5"  style="margin-top: 6%">
+            <div class="contact-box row g-4 align-items-center mx-auto" style="width: fit-content;">
+                <p><strong>Kako se prijaviti?</strong> Ostavite nam sljedeće podatke: Ime i prezime, Email adresu, kontakt telefon i instituciju ispred koje dolazite</p>
+            </div>
+        </div>
+        <div class="container py-3 mt-4">
             <!-- Contact Form and Map -->
             <div class="contact-box row g-4 align-items-center mx-auto" style="max-width: 1000px;">
                 <!-- Contact Form -->
                 <div class="col-lg-6">
                     <h2 class="mb-4 text-center">Register</h2>
-                    <form>
+                    <form action="/submit-form" method="POST">
                         <div class="row mb-3" style="width: auto;">
                             <div class="col-md">
-                                <label for="firstName" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                                <label class="form-label">First Name</label>
+                                <input name="firstName" type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
                             </div>
                             <div class="col-md">
-                                <label for="lastName" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+                                <label class="form-label">Last Name</label>
+                                <input name="lastName" type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="emailAddress" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="emailAddress" placeholder="Enter your email address" required>
+                            <label class="form-label">Email Address</label>
+                            <input name="email" type="email" class="form-control" id="emailAddress" placeholder="Enter your email address" required>
                         </div>
                         <div class="mb-3">
-                            <label for="phoneNumber" class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
+                            <label class="form-label">Phone Number</label>
+                            <input name="phone" type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Organization</label>
+                            <input name="organization" type="tel" class="form-control" id="phoneNumber" placeholder="Enter your organization" required>
                         </div>
                         
                         <div class="text-center pt-2">
@@ -90,6 +99,16 @@
             </div>
 
             
+        </div>
+
+        <div class="container py-3 mt-5">
+            <div class="contact-box bg-dark row g-4 align-items-center mx-auto" style="width: fit-content; max-width: 1000px; padding: 20px; border-radius: 8px;">
+                <h4 class="text-warning text-start w-100"><strong>Instrukcije za plaćanje</strong></h4>
+                <p class="text-warning m-0"><strong>Primalac:</strong> MAMA Media d.o.o Sarajevo</p>
+                <p class="text-warning m-0"><strong>Adresa:</strong> Džemala Bijedića 279D, 71000 Sarajevo</p>
+                <p class="text-warning m-0"><strong>Transakcijski račun:</strong> 1413105320024326, BBI d.d. Sarajevo</p>
+                <p class="text-warning m-0"><strong>Svrha uplate:</strong> Kotizacija za učešće na dermatoonkološkom simpoziju</p>
+            </div>
         </div>
         
         <!-- Bootstrap JS -->
