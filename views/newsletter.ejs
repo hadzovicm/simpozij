@@ -19,9 +19,10 @@
                             <p class="text-light">Pretplatite se na naš newsletter kako bi dobili najnovije informacije</p>
                         </div>
                         <div class="mb-4">
-                            <form>
+                            <form action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="240d4f75-0a40-4c0e-a4ee-103cef451d93">
                                 <div class="mb-3">
-                                    <input type="email" class="form-control" placeholder="Unesite vašu Email adresu">
+                                    <input name="email" type="email" class="form-control" placeholder="Unesite vašu Email adresu" required>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Pretplatite se</button>
                             </form>
